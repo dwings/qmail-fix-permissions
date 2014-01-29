@@ -26,7 +26,7 @@ else
 	sleep 2s
 	chown $xuser:$xuser $dir/mailnames -R $*
 	echo "done"
-	echo -n "fixing permissions..."
+	echo "fixing permissions..."
 	sleep 2s
 	chmod 0775 $dir/mailnames -R $*
 	find $dir/mailnames -name ".qmail*" -exec chmod 600 {} \; -print
