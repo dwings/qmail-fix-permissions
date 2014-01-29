@@ -29,6 +29,7 @@ else
 	echo -n "fixing permissions..."
 	sleep 2s
 	chmod 0775 $dir/mailnames -R $*
+	find $dir/mailnames -name ".qmail*" -exec chmod 600 {} \; -print
 	echo "done"
 	exit 0
 fi
