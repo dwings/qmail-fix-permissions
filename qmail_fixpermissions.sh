@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ "$(whoami)" != "root" ];
  then
-   echo "Needs to be run as root, [x]"
+   echo "Needs to be runned as root, [x]"
    exit 1
 else
 	echo "This little script will fix your qmail permissions (if broken)!"
